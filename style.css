@@ -1,60 +1,102 @@
 html {
-    font-size: 16px; /* px means "pixels": the base font size is now 10 pixels high */
-    font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google Fonts */
-    color: white; /* font color is just referred to as color */
-    background-color: #efefef; /* Update the background color */
-  }
+  font-size: 16px;
+  /* px means "pixels": the base font size is now 10 pixels high */
+  font-family: "Open Sans", sans-serif;
+  /* this should be the rest of the output you got from Google Fonts */
+  color: white;
+  /* font color is just referred to as color */
+  background-color: #efefef;
+  /* Update the background color */
+}
 
-  body {
-    width: 600px; /* Forces the page to always be 600px wide */
-    margin: 0 auto; /* two values implies top | bottom but able to use four if preferred */
-    background-color: #27333e;
-    padding: 0 20px 20px 20px; /* top | right | bottom | left */
-    border: 5px solid black;
-  }
+body {
+  width: 600px;
+  /* Forces the page to always be 600px wide */
+  margin: 0 auto;
+  /* two values implies top | bottom but able to use four if preferred */
+  background-color: #27333e;
+  padding: 0 20px 20px 20px;
+  /* top | right | bottom | left */
+  border: 5px solid black;
+}
 
-  img {
-    display: block;
-    margin: 0 auto;
-  }
+img {
+  display: block;
+  margin: 0 auto;
+}
 
 /* This is a style for the general element defined */
 h1 {
-    margin: 0;
-    padding: 20px 0;
-    color: white;
-    font-size: 60px;
-    text-align: center;
-    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue; /* offset-x | offset-y | blur-radius
+  margin: 0;
+  padding: 20px 0;
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+/* offset-x | offset-y | blur-radius
 }
 
 /* This is a style for an image using the src property */
 img[src] {
-    width: 350px;
+  width: 350px;
 }
 
 /* This is a style for an element with the specific id="desc-page" */
 #desc-page {
-    color: green;
+  color: green;
 }
 
 /* This is a general style for multiple elements defined */
 p,
 li {
-    color: white;
-    font-size: 16px;
-    line-height: 2;
-    letter-spacing: 1px;
-  }
+  color: white;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
 
-  /* This is a style for a specific defined class */
+/* This is a style for a specific defined class */
 .test-class {
-    color: white;
-    line-height: normal;
-    letter-spacing: normal;
+  color: white;
+  line-height: normal;
+  letter-spacing: normal;
 }
 
 /* This is a style for a defined state of a general element - doesn't work with the html style enabled above */
-  a:hover {
-    color: rgb(0, 255, 110);
-  }
+a:hover {
+  color: rgb(0, 255, 110);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #333;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #111;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
